@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TREASURE HUNT!</title>
+  <link rel="icon" type="image/x-icon" href="https://freesvg.org/img/money-3221936.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <h1>Welcome to the Treasure Hunt!</h1>
+  <h2>Find the treasure before you run out of turns!</h2>
+  <div id="hero">
+    <img id="chest" src="https://freesvg.org/img/money-3221936.png" width="300"/>
+    
+    <table border="4">
+      <tr>
+        <td id="1" onclick="alert1('1')">?</td>
+        <td id="2" onclick="alert1('2')">?</td>
+        <td id="3" onclick="alert1('3')">?</td>
+        <td id="4" onclick="alert1('4')">?</td>
+      </tr>
+      <tr>
+        <td id="5" onclick="alert1('5')">?</td>
+        <td id="6" onclick="alert1('6')">?</td>
+        <td id="7" onclick="alert1('7')">?</td>
+        <td id="8" onclick="alert1('8')">?</td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="main">
+    <div id="rules">
+      <h3>Rules of the Game</h3>
+      <ol>
+        <li>Click the boxes to see if you can find the treasure!</li>
+        <li>If find the bomb, it explodes and you lose</li>
+        <li>If you find the treasure, you win!</li>
+        <li>You have a limited number of tries</li>
+      </ol>
+    </div>
+
+    <div id="buttonturns">
+      <p>Turns Left: <div id="turns">4</div></p>
+      <button id="button" type="button" onclick="location.reload()">Click to Reset the Game</button>
+    </div>
+  </div>
+
+  <footer>
+    &copy; Chris and LaBarbara |  
+    <a href="https://www.instructables.com/HOW-TO-PLAN-A-FUN-TREASURE-HUNT/">How to plan your own Treasure Hunt</a> 
+  </footer>
+  <script type="text/javascript" src="treasurehunt.js"></script>
+</body>
+</html>
